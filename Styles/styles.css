@@ -2,24 +2,77 @@ body {
     background: white;
     margin: 0;
     padding: 0;
+    font-family: arial, sans-serif;
 }
 
 #container {
-    padding: 5px 20px;
+    padding: 10px 12px;
 }
 
-#content {
-    width: 800px;
-    margin: 0 auto;
+#content, #main, #search-box-form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-main {
-    
+#content {
+    clear: both;
 }
 
-#google-logo, #search-box {
-    
+#hplogo {
+    padding: 30px;
 }
+
+#top-nav {
+    float: right;
+    width: 220px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background: white;
+}
+
+#google-apps-button {
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(3, 4px);
+    grid-template-rows: repeat(3, 4px);
+    grid-gap: 2px;
+}  
+
+.g1, .g2, .g3, .g4, .g5, .g6, .g7, .g8, .g9 {
+    background: rgba(0,0,0,0.60);
+}
+
+#google-account-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#g-account-icon {
+    height: 2.20em;
+    width: 2.20em;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    display: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#g-account-icon p {
+    font-size: 15px;
+}
+
+.links {
+    font-size: 13px;
+}
+
+#top-nav a {
+    text-decoration: none;
+}
+
