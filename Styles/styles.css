@@ -1,24 +1,37 @@
+html {
+    height: 100vh;
+}
+
 body {
     background: white;
     margin: 0;
     padding: 0;
     font-family: arial, sans-serif;
     font-size: 14px;
+    height: 100%;
+
 }
 
 #container {
-    padding: 10px 12px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
 }
 
 #top-nav {
-    float: right;
     width: 220px;
     font-size: 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background: white;
+    background: purple;
+    position: absolute;
+    right: 12px;
+    height: 60px;
+    
 }
 
 #top-nav a {
@@ -63,14 +76,22 @@ body {
     font-size: 13px;
 }
 
+#content {
+    clear: both;
+    height: 100%;
+    background: orange;
+    justify-content: center;
+    height: 400px;
+    width: 1000px;
+    position: absolute;
+    top: 80px;
+    
+}
+
 #content, #main, #search-box-form {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#content {
-    clear: both;
 }
 
 #hplogo {
@@ -123,3 +144,30 @@ body {
     font-size: 14px;
     padding: 0 15px;
 }
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f2;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    
+}
+
+#left-nav-bottom, #right-nav-bottom {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+#left-nav-bottom {
+    float: left;
+}
+
+#right-nav-bottom {
+    float: right;
+}
+
