@@ -31,12 +31,15 @@
                 <div id="main">
                     <img alt="Google" id="hplogo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
                     
-                    <div id="search-box">
+                    <div id="search-box-container">
                         <form id="search-box-form">
-                            <input type="search" id="google-search-box">
+                            <div id="search-box-bar">
+                                <input type="search" id="google-search-box">
+                                <svg id="search-icon"><path id="path" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+                            </div>    
                             <div id="search-buttons">
-                                <button id="google-search-button">Google Search</button>
-                                <button id="feeling-lucky-button">I'm Feeling Lucky</button>
+                                <button id="google-search-button" type="submit">Google Search</button>
+                                <button id="feeling-lucky-button" type="submit">I'm Feeling Lucky</button>
                             </div>
                         </form>
                     </div>

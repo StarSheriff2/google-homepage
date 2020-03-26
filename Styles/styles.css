@@ -3,24 +3,11 @@ body {
     margin: 0;
     padding: 0;
     font-family: arial, sans-serif;
+    font-size: 14px;
 }
 
 #container {
     padding: 10px 12px;
-}
-
-#content, #main, #search-box-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#content {
-    clear: both;
-}
-
-#hplogo {
-    padding: 30px;
 }
 
 #top-nav {
@@ -32,6 +19,10 @@ body {
     justify-content: space-evenly;
     align-items: center;
     background: white;
+}
+
+#top-nav a {
+    text-decoration: none;
 }
 
 #google-apps-button {
@@ -72,7 +63,63 @@ body {
     font-size: 13px;
 }
 
-#top-nav a {
-    text-decoration: none;
+#content, #main, #search-box-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+#content {
+    clear: both;
+}
+
+#hplogo {
+    padding: 30px;
+}
+
+#search-box-bar {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 582px;
+    height: 44px;
+    border-width: 0px;
+    border-radius: 50px;
+    
+    box-shadow: 0 0 5px 0.5px rgba(0,0,0,0.15);
+}
+
+#search-icon {
+    width: 20px;
+    height: 20px;
+}
+
+#path {
+    opacity: 0.3;
+}
+
+#google-search-box {
+    width: 527px;
+    height: 34;
+    border-width: 0;  
+    margin-right: 20px;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+#search-buttons {
+    background: red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+#google-search-button, #feeling-lucky-button {
+    height: 36px;
+    margin: 20px 5px; 
+    border-radius: 2.5px;
+    border-width: 0px;
+    font-size: 14px;
+    padding: 0 15px;
+}
