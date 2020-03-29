@@ -52,7 +52,7 @@ body {
 }  
 
 #google-apps-button:hover {
-    --g-apps-color: black;
+    --g-apps-color: #000;
 }
 
 /* .g1:hover, .g2:hover, .g3:hover, .g4:hover, .g5:hover, .g6:hover, .g7:hover, .g8:hover, .g9:hover {
@@ -73,7 +73,7 @@ body {
 #g-account-icon {
     height: 2.20em;
     width: 2.20em;
-    background: black;
+    background: purple;
     color: white;
     border-radius: 50%;
     display: flex;
